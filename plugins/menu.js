@@ -4,18 +4,88 @@ import fetch from 'node-fetch'
 import { xpRange } from '../lib/levelling.js'
 //import { plugins } from '../lib/plugins.js'
 let tags = {
-  
-  'applications':'‎ أوامر التطبيقات‎',
-  'drawing':'‎ توليد الصور‎ أوامر' ,
-  'ai':'‎ الذكاء الاصطناعي‎ أوامر',
-  'downloader':'‎ أوامر التحميلات',
-  'anime':'‎ أوامر عن  الأنيم',
-  'islam':'‎ الدين هو الاسلام‎',
-  'search':'‎ أوامر البحث',
-  'audio-changer':'‎ تعديل الصوتيات‎',
-  'sticker':'‎ أوامر الملصقات',
-  'image-edit':'‎ تعديل الصور',
-  'pdf':'‎ pdf ومشتقاته‎',
+    ≡
+┏━━⊜ *أوامر التطبيقات* 
+┃⋄ .apk
+┗━━━━━━━━⬣
+
+┏━━⊜ *توليد الصور‎ أوامر* 
+┃⋄ .bingcreate
+┃⋄ .bimg
+┃⋄ .dalle
+┗━━━━━━━━⬣
+
+┏━━⊜ *الذكاء الاصطناعي‎ أوامر* 
+┃⋄ .ai
+┃⋄ .chatgbt
+┃⋄ .chawnyma
+┃⋄ .dx
+┗━━━━━━━━⬣
+
+┏━━⊜ *اوامرتحميل الموسيقى* 
+┃⋄ .song
+┗━━━━━━━━⬣
+
+┏━━⊜ *أوامر عن  الأنيم* 
+┃⋄ .animepic
+┃⋄ .ppcouple
+┃⋄ .tofanime
+┃⋄ .animestory
+┃⋄ .reels
+┃⋄ .resvcouple
+┃⋄ .stories
+┗━━━━━━━━⬣
+
+┏━━⊜ *الدين هو الاسلام‎* 
+┃⋄ .adhan
+┃⋄ .asmaeallah
+┃⋄ .ayati
+┃⋄ .bader
+┃⋄ .coran
+┗━━━━━━━━⬣
+
+
+┏━━⊜ *تعديل الصور* 
+┃⋄ .blur
+┃⋄ .dehaze
+┃⋄ .recolor
+┃⋄ .hdr
+┃⋄ .remini
+┗━━━━━━━━⬣
+
+┏━━⊜ *اوامر تحميل من يوتب* 
+┃⋄ .youtube
+┃⋄ .ytdoc
+┃⋄ .ytmp4
+┃⋄ .yts البحث عن رابط الفيديو 
+┗━━━━━━━━⬣
+
+┏━━⊜ *infobot* 
+┃⋄ .alive
+┃⋄ .channel
+┃⋄ .menu
+┃⋄ .ping
+┃⋄ .runtime
+┗━━━━━━━━⬣
+
+┏━━⊜ *logo* 
+┃⋄ .brandcrowd
+┃⋄ .pubg
+┗━━━━━━━━⬣
+
+┏━━⊜ *tools* 
+┃⋄ .bruzu
+┃⋄ .coffee
+┃⋄ .get
+┃⋄ .hd
+┃⋄ .qrcode
+┃⋄ .readqr
+┃⋄ .short
+┃⋄ .sleep
+┃⋄ .ssweb
+┃⋄ .stories
+┗━━━━━━━━⬣
+
  
 }
 const defaultMenu = {
