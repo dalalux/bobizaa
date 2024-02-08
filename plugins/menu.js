@@ -138,7 +138,7 @@ contextInfo: {
 externalAdReply: {
 title: '𝗗 𝗔 𝗟 𝗔 𝗕 𝗢 𝗧',
 body: " 𝙰𝙱𝙳𝙴𝙻𝙻𝙰𝙷 𝙱𝙾𝚄𝙰𝚉𝙰𝙾𝙾𝚄𝙸",
-thumbnailUrl: 'https://telegra.ph/file/2829c7653514416d207e2.jpg',
+thumbnailUrl:'https://telegra.ph/file/e45bc91883198c1347fa5.mp4',
 sourceUrl: 'instagram.com/__3abdollah__',
 mediaType: 1,
 renderLargerThumbnail: true
