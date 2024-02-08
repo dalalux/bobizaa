@@ -2,89 +2,19 @@ import { promises } from 'fs'
 import { join } from 'path'
 import fetch from 'node-fetch'
 import { xpRange } from '../lib/levelling.js'
-    ≡
-┏━━⊜ *أوامر التطبيقات* 
-┃⋄ .apk
-┗━━━━━━━━⬣
-
-┏━━⊜ *توليد الصور‎ أوامر* 
-┃⋄ .bingcreate
-┃⋄ .bimg
-┃⋄ .dalle
-┗━━━━━━━━⬣
-
-┏━━⊜ *الذكاء الاصطناعي‎ أوامر* 
-┃⋄ .ai
-┃⋄ .chatgbt
-┃⋄ .chawnyma
-┃⋄ .dx
-┗━━━━━━━━⬣
-
-┏━━⊜ *اوامرتحميل الموسيقى* 
-┃⋄ .song
-┗━━━━━━━━⬣
-
-┏━━⊜ *أوامر عن  الأنيم* 
-┃⋄ .animepic
-┃⋄ .ppcouple
-┃⋄ .tofanime
-┃⋄ .animestory
-┃⋄ .reels
-┃⋄ .resvcouple
-┃⋄ .stories
-┗━━━━━━━━⬣
-
-┏━━⊜ *الدين هو الاسلام‎* 
-┃⋄ .adhan
-┃⋄ .asmaeallah
-┃⋄ .ayati
-┃⋄ .bader
-┃⋄ .coran
-┗━━━━━━━━⬣
-
-
-┏━━⊜ *تعديل الصور* 
-┃⋄ .blur
-┃⋄ .dehaze
-┃⋄ .recolor
-┃⋄ .hdr
-┃⋄ .remini
-┗━━━━━━━━⬣
-
-┏━━⊜ *اوامر تحميل من يوتب* 
-┃⋄ .youtube
-┃⋄ .ytdoc
-┃⋄ .ytmp4
-┃⋄ .yts البحث عن رابط الفيديو 
-┗━━━━━━━━⬣
-
-┏━━⊜ *infobot* 
-┃⋄ .alive
-┃⋄ .channel
-┃⋄ .menu
-┃⋄ .ping
-┃⋄ .runtime
-┗━━━━━━━━⬣
-
-┏━━⊜ *logo* 
-┃⋄ .brandcrowd
-┃⋄ .pubg
-┗━━━━━━━━⬣
-
-┏━━⊜ *tools* 
-┃⋄ .bruzu
-┃⋄ .coffee
-┃⋄ .get
-┃⋄ .hd
-┃⋄ .qrcode
-┃⋄ .readqr
-┃⋄ .short
-┃⋄ .sleep
-┃⋄ .ssweb
-┃⋄ .stories
-┗━━━━━━━━⬣
-
+//import { plugins } from '../lib/plugins.js'
+let tags = {
  
+  'applications':'‎ أوامر تحميل التطبيقات‎',
+  'drawing':'‎ توليد الصور‎ أوامر' ,
+  'ai':'‎ الذكاء الاصطناعي‎ أوامر',
+  'downloader':'‎ أوامر التحميلات',
+  'anime':'‎ أوامر عن  الأنيم',
+  'islam':'‎ الدين هو الاسلام‎',
+  'search':'‎ أوامر البحث',
+  'image-edit':'‎ تعديل الصور',
+  'pdf':'‎ pdf ومشتقاته‎',
+  'uploader':'‎‎ رفع الملفات‎',
 }
 const defaultMenu = {
   before: `السلام عليكم 👋. 
@@ -94,7 +24,7 @@ const defaultMenu = {
 ⏰ *Uptime:* %muptime  
 ┗━━━━━━━━━━⬣
 %readmore
-  ≡ *𝗗 𝗔 𝗟 𝗔 𝗕 𝗢 𝗧*
+  ≡ *𝗗𝗔𝗟𝗔 | M E N U*
 `.trimStart(),
   header: '┏━━⊜ *_%category_* ',
   body: '┃⋄ %cmd %isdiamond %isPremium',
@@ -202,16 +132,16 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
 text: text,
 contextInfo: {
 externalAdReply: {
-title: '𝗗𝗔𝗟𝗔𝗕𝗢𝗧',
-body: "𝗔𝗕𝗗𝗢𝗟𝗟𝗔𝗛 𝗕𝗢𝗨𝗔𝗭𝗔𝗢𝗨𝗜",
+title: 'BOBIZA BOT ♥',
+body: "أول بوت واتساب في العالم العربي 💖",
 thumbnailUrl: 'https://telegra.ph/file/2829c7653514416d207e2.jpg',
-sourceUrl: 'https://instagram.com/noureddine_ouafy',
+sourceUrl: 'instagram.com/__3abdollah__',
 mediaType: 1,
 renderLargerThumbnail: true
 }}}, { quoted: m})
 
     /*conn.sendFile(m.chat, 'menu.png', text.trim(), m, null, )
-    /*conn.sendButton(m.chat, text.trim(), '▢ DyLux  ┃ ᴮᴼᵀ\n▢ Sígueme en Instagram\nhttps://www.instagram.com/fg98_ff', pp, [
+    /*conn.sendButton(m.chat, text.trim(), '▢ DyLux  ┃ ᴮᴼᵀ\n▢ Sígueme en Instagram\nhttps://www.instagram.com/__3abdollah__', pp, [
       ['ꨄ︎ Apoyar', `${_p}donate`],
       ['⏍ Info', `${_p}botinfo`],
       ['⌬ Grupos', `${_p}gpdylux`]
