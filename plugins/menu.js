@@ -24,7 +24,7 @@ const defaultMenu = {
 ⏰ *Uptime:* %muptime  
 ┗━━━━━━━━━━⬣
 %readmore
-  ≡ *𝗗𝗔𝗟𝗔 | M E N U*
+  ≡ *𝗗 𝗔 𝗟 𝗔 | M E N U*
 `.trimStart(),
   header: '┏━━⊜ *_%category_* ',
   body: '┃⋄ %cmd %isdiamond %isPremium',
@@ -132,9 +132,9 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
 text: text,
 contextInfo: {
 externalAdReply: {
-title: 'BOBIZA BOT ♥',
+title: '𓄼𝗗 𝗔 𝗟 𝗔 𝗕 𝗢 𝗧𓆹',
 body: "🄰🄱🄳🄾🄻🄻🄰🄷 🄱🄾🅄🄰🅉🄰🄾🅄🄸💖",
-thumbnailUrl: 'https://www.facebook.com/share/8Abx2KFL5NJVL914/?mibextid=oFDknk',
+thumbnailUrl: 'https://https://firebasestorage.googleapis.com/v0/b/dalax-5339a.appspot.com/o/EDITZ%20BOY%20PRESENT%20INTRO%203%20%5BB2DF25C%5D.mp4?alt=media&token=1ecdb348-52e5-41f7-b1c4-a83dbbb82757',
 sourceUrl: 'instagram.com/__3abdollah__',
 mediaType: 1,
 renderLargerThumbnail: true
